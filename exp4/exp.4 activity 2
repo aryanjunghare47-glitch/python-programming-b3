@@ -1,0 +1,24 @@
+# Empty lists
+products = []
+prices = []
+
+# Number of products
+n = int(input("Enter number of products: "))
+
+# Taking input
+for i in range(n):
+    name = input("Enter product name: ")   # string
+    price = float(input("Enter price: ")) # number
+    
+    products.append(name)
+    prices.append(price)
+
+# Calculate total bill
+total_bill = sum(prices)
+
+# Display bill
+print("\n--- Bill ---")
+for i in range(n):
+    print(products[i], ":", prices[i])
+
+print("\nTotal Bill:", total_bill)

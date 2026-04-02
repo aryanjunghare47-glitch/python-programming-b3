@@ -1,0 +1,27 @@
+# Empty lists
+students = []
+marks = []
+
+# Number of students
+n = int(input("Enter number of students: "))
+
+# Taking input
+for i in range(n):
+    name = input("Enter student name: ")   # string input
+    mark = float(input("Enter marks: "))  # numeric input
+    
+    students.append(name)
+    marks.append(mark)
+
+# Calculate average
+average_marks = sum(marks) / n
+
+# Find topper
+topper_marks = max(marks)
+topper_index = marks.index(topper_marks)
+topper_name = students[topper_index]
+
+# Display results
+print("\nAverage Marks:", average_marks)
+print("Topper Marks:", topper_marks)
+print("Topper Name:", topper_name)

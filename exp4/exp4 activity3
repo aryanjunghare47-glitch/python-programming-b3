@@ -1,0 +1,15 @@
+# Create an empty list to store feedback messages
+feedback_list = []
+
+# Taking input from customers
+n = int(input("Enter number of customers: "))
+
+for i in range(n):
+    message = input(f"Enter feedback from customer {i+1}: ")
+    feedback_list.append(message)   # store feedback in list
+
+# Display all feedback messages
+print("\nCustomer Feedback Messages:")
+
+for i in range(len(feedback_list)):
+    print(f"Customer {i+1}: {feedback_list[i]}")
